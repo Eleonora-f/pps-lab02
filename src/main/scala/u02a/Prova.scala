@@ -28,6 +28,6 @@ object Prova extends App:
     x <= y && y == z
   println(curriedFunType(2)(3)(3))
 
-  val p1: Int => (Int => (Int => Boolean)) =
+  val p1: Int => (Int => (Int => Boolean)) = x => y => z =>
     x <= y && y == z
-  println(curriedFunType(2)(3)(3))
+  println(p1(2)(3)(3))
